@@ -1,0 +1,1 @@
+/Users/kostia/code/vim-wmj/.vimrc
