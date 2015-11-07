@@ -33,7 +33,7 @@ Bundle 'embear/vim-localvimrc'
 
 Bundle 'rdnetto/YCM-Generator'
 Bundle 'davidhalter/jedi-vim'
-#Bundle 'jeaye/color_coded'
+"Bundle 'jeaye/color_coded'
 Bundle 'rhysd/vim-clang-format'
 
 Bundle 'wkentaro/conque.vim'
