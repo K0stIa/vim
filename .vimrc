@@ -25,6 +25,7 @@ Bundle 'grep.vim'
 " Github repos
 Bundle 'tomasr/molokai'
 Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'airblade/vim-gitgutter'
@@ -38,6 +39,8 @@ Bundle 'rhysd/vim-clang-format'
 
 Bundle 'wkentaro/conque.vim'
 Bundle 'Igorjan94/codeforces.vim'
+"Bundle 'rstacruz/vim-remux'
+Bundle 'Valloric/YouCompleteMe'
 
 
 filetype plugin indent on     " required! 
@@ -65,8 +68,8 @@ if has('gui_running')
 	colorscheme solarized 
 else
 	set background=dark
-  "colorscheme molokai 
-  colorscheme solarized
+  colorscheme molokai 
+  "colorscheme solarized
 endif
 
 " For search highlight
@@ -114,7 +117,7 @@ if v:version <= 703 || !has('python')
 	autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 else
 	Bundle 'Valloric/YouCompleteMe'
-	"let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+	let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 	let g:ycm_confirm_extra_conf = 0
 	let g:ycm_autoclose_preview_window_after_completion = 1
 	let g:ycm_autoclose_preview_window_after_insertion = 1
