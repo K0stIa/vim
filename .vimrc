@@ -40,6 +40,10 @@ Bundle 'rhysd/vim-clang-format'
 Bundle 'wkentaro/conque.vim'
 Bundle 'Igorjan94/codeforces.vim'
 "Bundle 'rstacruz/vim-remux'
+
+"For installation see
+"http://www.alexeyshmalko.com/2014/youcompleteme-ultimate-autocomplete-plugin-for-vim
+"http://valloric.github.io/YouCompleteMe/#ubuntu-linux-x64
 Bundle 'Valloric/YouCompleteMe'
 
 
@@ -100,29 +104,29 @@ map <leader>qq :qall<CR>
 map <leader>s :%s/\(<c-r>=expand("<cword>")<cr>\)/
 
 " For C++ completion plugin
-if v:version <= 703 || !has('python')
-	" For omnicomplete
-	Bundle 'OmniCppComplete'
-	let OmniCpp_NamespaceSearch = 1      
-	let OmniCpp_GlobalScopeSearch = 1      
-	let OmniCpp_ShowScopeInAbbr = 1
-	let OmniCpp_ShowPrototypeInAbbr = 1
-	let OmniCpp_ShowAccess = 1      
-	let OmniCpp_MayCompleteDot = 1
-	let OmniCpp_MayCompleteArrow = 1      
-	let OmniCpp_MayCompleteScope = 1      
-	let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
-	" Do not show preview window
-	autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-	autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-else
+"if v:version <= 703 || !has('python')
+"	" For omnicomplete
+"	Bundle 'OmniCppComplete'
+"	let OmniCpp_NamespaceSearch = 1      
+"	let OmniCpp_GlobalScopeSearch = 1      
+"	let OmniCpp_ShowScopeInAbbr = 1
+"	let OmniCpp_ShowPrototypeInAbbr = 1
+"	let OmniCpp_ShowAccess = 1      
+"	let OmniCpp_MayCompleteDot = 1
+"	let OmniCpp_MayCompleteArrow = 1      
+"	let OmniCpp_MayCompleteScope = 1      
+"	let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+"	" Do not show preview window
+"	autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+"	autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"else
 	Bundle 'Valloric/YouCompleteMe'
 	let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 	let g:ycm_confirm_extra_conf = 0
 	let g:ycm_autoclose_preview_window_after_completion = 1
 	let g:ycm_autoclose_preview_window_after_insertion = 1
 	noremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-endif
+"endif
 
 " For NERDTree plugin
 "autocmd vimenter * NERDTree
@@ -199,3 +203,6 @@ if &term =~ '256color'
 " disable Background Color Erase (BCE)
  set t_ut=
 endif
+
+" For vcsh & mr see
+" https://web.archive.org/web/20150827044600/http://www.martin-burger.net/blog/unix-shell/manage-dotfiles-quickly-and-effortlessly
