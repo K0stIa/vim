@@ -39,6 +39,8 @@ Bundle 'rhysd/vim-clang-format'
 
 Bundle 'wkentaro/conque.vim'
 Bundle 'Igorjan94/codeforces.vim'
+
+Bundle 'rgo/taglist.vim'
 "Bundle 'rstacruz/vim-remux'
 " For C++ completion plugin
 "if v:version <= 703 || !has('python')
