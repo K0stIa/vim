@@ -38,9 +38,23 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'rhysd/vim-clang-format'
 
 Bundle 'wkentaro/conque.vim'
-Bundle 'Igorjan94/codeforces.vim'
-
+"Bundle 'Igorjan94/codeforces.vim'
 Bundle 'rgo/taglist.vim'
+Bundle 'jordwalke/flatlandia'
+Bundle 'qpkorr/vim-bufkill'
+
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
+"snipets config
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-space>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+"let g:UltiSnipsEditSplit="vertical"
+
+
 "Bundle 'rstacruz/vim-remux'
 " For C++ completion plugin
 "if v:version <= 703 || !has('python')
@@ -63,7 +77,7 @@ Bundle 'rgo/taglist.vim'
 "http://www.alexeyshmalko.com/2014/youcompleteme-ultimate-autocomplete-plugin-for-vim
 "http://valloric.github.io/YouCompleteMe/#ubuntu-linux-x64
 
-  Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
   let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
   let g:ycm_confirm_extra_conf = 0
   let g:ycm_autoclose_preview_window_after_completion = 1
@@ -95,10 +109,12 @@ if has('gui_running')
 	set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
 	":h11:cANSI
 	set background=dark
-	colorscheme solarized 
+	"colorscheme solarized 
+  colorscheme flatlandia
 else
 	set background=dark
-  colorscheme molokai 
+  "colorscheme molokai 
+  colorscheme flatlandia
   "colorscheme solarized
 endif
 
