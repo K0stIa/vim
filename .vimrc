@@ -110,11 +110,12 @@ if has('gui_running')
 	":h11:cANSI
 	set background=dark
 	"colorscheme solarized 
-  colorscheme flatlandia
+  "colorscheme flatlandia
 else
 	set background=dark
   "colorscheme molokai 
-  colorscheme flatlandia
+  "colorscheme molokai
+  "colorscheme flatlandia
   "colorscheme solarized
 endif
 
