@@ -40,7 +40,8 @@ Bundle 'rhysd/vim-clang-format'
 Bundle 'wkentaro/conque.vim'
 "Bundle 'Igorjan94/codeforces.vim'
 Bundle 'rgo/taglist.vim'
-Bundle 'jordwalke/flatlandia'
+"Bundle 'jordwalke/flatlandia'
+Bundle 'blerins/flattown'
 Bundle 'qpkorr/vim-bufkill'
 
 Bundle 'SirVer/ultisnips'
@@ -114,11 +115,12 @@ if has('gui_running')
 	"colorscheme solarized 
   "colorscheme flatlandia
 else
-	set background=dark
+	"set background=dark
   "colorscheme molokai 
   "colorscheme molokai
   "colorscheme flatlandia
   "colorscheme solarized
+  colorscheme flattown
 endif
 
 " For search highlight
